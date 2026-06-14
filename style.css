@@ -9,6 +9,56 @@ body{
     overflow-x:hidden;
 }
 
+
+.balloon-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.balloon-container span{
+    position: absolute;
+    bottom: -100px;
+    font-size: 50px;
+    animation: rise linear infinite;
+}
+
+.balloon-container span:nth-child(1){left:2%; animation-duration:9s;}
+.balloon-container span:nth-child(2){left:7%; animation-duration:12s;}
+.balloon-container span:nth-child(3){left:12%; animation-duration:10s;}
+.balloon-container span:nth-child(4){left:18%; animation-duration:14s;}
+.balloon-container span:nth-child(5){left:23%; animation-duration:11s;}
+.balloon-container span:nth-child(6){left:29%; animation-duration:13s;}
+.balloon-container span:nth-child(7){left:35%; animation-duration:10s;}
+.balloon-container span:nth-child(8){left:40%; animation-duration:15s;}
+.balloon-container span:nth-child(9){left:46%; animation-duration:9s;}
+.balloon-container span:nth-child(10){left:52%; animation-duration:12s;}
+.balloon-container span:nth-child(11){left:58%; animation-duration:11s;}
+.balloon-container span:nth-child(12){left:64%; animation-duration:14s;}
+.balloon-container span:nth-child(13){left:69%; animation-duration:10s;}
+.balloon-container span:nth-child(14){left:74%; animation-duration:13s;}
+.balloon-container span:nth-child(15){left:79%; animation-duration:9s;}
+.balloon-container span:nth-child(16){left:84%; animation-duration:15s;}
+.balloon-container span:nth-child(17){left:88%; animation-duration:11s;}
+.balloon-container span:nth-child(18){left:92%; animation-duration:14s;}
+.balloon-container span:nth-child(19){left:96%; animation-duration:10s;}
+.balloon-container span:nth-child(20){left:50%; animation-duration:8s;}
+
+@keyframes rise{
+    0%{
+        transform: translateY(0);
+        opacity:1;
+    }
+    100%{
+        transform: translateY(-120vh);
+        opacity:0;
+    }
+}
+
 @keyframes bgMove{
 0%{background-position:left;}
 100%{background-position:right;}
