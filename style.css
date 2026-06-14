@@ -1,12 +1,13 @@
 body{
     margin:0;
-    background:linear-gradient(135deg,#ff69b4,#8a2be2,#00bfff);
-    background-size:400% 400%;
-    animation:bgMove 10s infinite alternate;
-    font-family:Arial;
-    text-align:center;
-    color:white;
-    overflow-x:hidden;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
 }
 
 
